@@ -1,0 +1,22 @@
+BIOS:
+- Disabilita secureboot in modo tale da installare dopo i driver di rete, altrimenti non possibile.
+- Nella scheda power impostare il profilo su "Max Performance", così da migliorare le prestazioni
+- Altro (scopriremo)
+
+Installazione:
+- Sto cercando di automatizzarla, ma in caso contrario questi sono i passaggi da seguire
+- Avvia da usb
+- Avvia l'installer
+- Imposta tastiera e lingua ITA, con variante Winkeys
+- Check su driver e coedcs proprietari
+- Pialla tutto il disco e installa
+- User minipc
+- Abilita login senza password!!
+- Pass "a" (da sostituire)
+- root pass (se serve) Vu4ttul@1
+- Hostname minipc(n°pc) (da vedere con tiziano)
+- Rimuovere chiavetta al termine e premere invio (non c'è la scritta per rimuoverla)
+
+OS
+
+Script vari
