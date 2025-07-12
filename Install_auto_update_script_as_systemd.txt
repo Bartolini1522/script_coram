@@ -1,0 +1,29 @@
+Rendilo eseguibile:
+
+chmod +x /home/tuo_utente/scripts/auto_update.sh
+
+Assicurati che il tuo utente abbia permesso di eseguire i comandi sudo senza richiesta di password per evitare interruzioni.
+Aggiungi il comando con visudo (sudo visudo):
+
+tuo_utente ALL=(ALL) NOPASSWD: /usr/bin/apt-get, /usr/sbin/reboot
+
+(ovviamente sostituisci tuo_utente con il nome utente effettivo)
+➁ Pianificazione automatica tramite cron
+
+Digita nel terminale:
+
+crontab -e
+
+Aggiungi la seguente riga per eseguire lo script ogni domenica alle 21:00 (un esempio di pianificazione comoda):
+
+0 21 * * 0 /home/tuo_utente/scripts/auto_update.sh
+
+Legenda cron:
+
+* * * * * comando
+| | | | |
+| | | | └── Giorno settimana (0 - Domenica)
+| | | └──── Mese (1 - 12)
+| | └────── Giorno del mese (1 - 31)
+| └──────── Ora (0 - 23)
+└────────── Minuti (0 - 59)

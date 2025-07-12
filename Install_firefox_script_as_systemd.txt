@@ -1,0 +1,40 @@
+Autostart dello script (metodo consigliato: systemd)
+
+Per avviare automaticamente questo script all'avvio del sistema, segui questi passaggi:
+
+    Crea un file firefox-kiosk.service in /etc/systemd/system/:
+
+[Unit]
+Description=Firefox Kiosk Mode
+After=network.target graphical.target
+
+[Service]
+Type=simple
+ExecStart=/bin/bash /percorso/allo/script/kiosk.sh
+Restart=always
+RestartSec=5
+User=tuo_utente
+Environment=DISPLAY=:0
+Environment=XAUTHORITY=/home/tuo_utente/.Xauthority
+
+[Install]
+WantedBy=graphical.target
+
+Nota:
+
+    Cambia /percorso/allo/script/kiosk.sh col percorso esatto dello script.
+
+    Cambia tuo_utente col nome utente che esegue Firefox e ha accesso alla GUI (non eseguire da root per sicurezza).
+
+    Attiva il servizio:
+
+sudo systemctl daemon-reload
+sudo systemctl enable firefox-kiosk.service
+sudo systemctl start firefox-kiosk.service
+
+Controllo del log:
+
+Per visualizzare il log in tempo reale (utile per il debug):
+
+tail -f ~/firefox_kiosk.log
+
