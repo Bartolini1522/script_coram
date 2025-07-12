@@ -1,14 +1,14 @@
 # script_coram
 # Riesci ad aggiungere lo script per i driver? che se lo faccio io probabilmente prende fuoco il pc XD
 
-- auto_update_system (contiene gli script per fare l'aggiornamento automatico di Xubuntu)
-|
-|-- auto_update.sh (script vero e proprio, da mettere sulla macchina)
-|-- file.txt istruzioni per farlo funzionare (spero)
+## 📂 Struttura delle cartelle
 
-- firefox_kiosk_mode (contiene gli script per firefox kiosk mode)
-|
-|-- auto_update.sh (script vero e proprio, da mettere sulla macchina)
-|-- file.txt istruzioni per farlo funzionare (spero)
+- **`auto_update_system`**  
+  Contiene lo script e istruzioni per aggiornamenti automatici del sistema operativo.
+
+- **`firefox_kiosk_mode`**  
+  Contiene lo script e istruzioni per eseguire automaticamente Firefox in modalità kiosk (schermo intero, senza interfaccia).
+
+---
 
 MINIPC.txt istruzioni generali
