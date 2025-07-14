@@ -5,7 +5,7 @@ URL="https://coram.it//slider"
 LOGFILE="$HOME/firefox_kiosk.log"
 
 #Avvio unclutter  x nascondere mouse
-unclutter -idle 0
+unclutter -idle 0 &
 
 # Loop infinito per monitoraggio
 while true; do
