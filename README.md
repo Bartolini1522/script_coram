@@ -1,5 +1,4 @@
 # script_coram
-# Riesci ad aggiungere lo script per i driver? che se lo faccio io probabilmente prende fuoco il pc XD
 
 ## 📂 Struttura delle cartelle
 
