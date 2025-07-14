@@ -10,7 +10,7 @@
   Contiene lo script e istruzioni per eseguire automaticamente Firefox in modalità kiosk (schermo intero, senza interfaccia).
 
 - **`install_drivers`**
-  Contiene lo script e i driver di rete necessari al minipc (scheda di rete RTL8125)  
+  Contiene lo script e i driver di rete necessari al minipc (scheda di rete RTL8125).
 
 ---
 
