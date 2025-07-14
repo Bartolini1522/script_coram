@@ -1,3 +1,6 @@
+#### INSTALLA UNCLUTTER se no si vede il mouse #######
+sudo apt install unclutter -y
+
 Autostart dello script (metodo consigliato: systemd)
 
 Per avviare automaticamente questo script all'avvio del sistema, segui questi passaggi:
@@ -10,12 +13,12 @@ After=network.target graphical.target
 
 [Service]
 Type=simple
-ExecStart=/bin/bash /percorso/allo/script/kiosk.sh
+ExecStart=/bin/bash /home/minipc/Scrivania/firefox_kiosk.sh
 Restart=always
 RestartSec=5
-User=tuo_utente
+User=minipc
 Environment=DISPLAY=:0
-Environment=XAUTHORITY=/home/tuo_utente/.Xauthority
+Environment=XAUTHORITY=/home/minipc/.Xauthority
 
 [Install]
 WantedBy=graphical.target
